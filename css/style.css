@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #11e2f5;
+  margin: 0;
+}
+
+/* ota element */
+#box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 440px;
+  height: 440px;
+}
+
+/* kataklar */
+#box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ko'k kataklar */
+#box span:nth-child(2),
+#box span:nth-child(4),
+#box span:nth-child(5),
+#box span:nth-child(7),
+#box span:nth-child(10),
+#box span:nth-child(12),
+#box span:nth-child(13),
+#box span:nth-child(15) {
+  background: #30a2ff;
+  color: white;
+}
+
+/*  sariq kataklar  */
+#box span:nth-child(1),
+#box span:nth-child(3),
+#box span:nth-child(6),
+#box span:nth-child(8),
+#box span:nth-child(9),
+#box span:nth-child(11),
+#box span:nth-child(14),
+#box span:nth-child(16) {
+  background: #f7ec09;
+  color: black;
+}
+
+/* MISOL */
+#mathProblem {
+  position: absolute;
+  top: 60px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* STOP TUGMA */
+#Stop {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #10b981;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+
+#Stop:hover {
+  background-color: #059669;
+}
